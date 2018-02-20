@@ -1,0 +1,11 @@
+To change the input values, hardcode the input by-
+	* changing the values in 'Transition' dictionary. State followed by the actions it can perform followed by the respective probabities of outcome.
+	* also, the values in 'Rewardvalue' dictionary.
+	
+State-> '(0, 0)': {
+Action->'U': [(0.8<-(Probability), '(0, 1)'<-(assosiated state), (0.1, '(1, 0)'), (0.1, '(0, 0)')],
+        'D': [(0.8, '(0, 0)'), (0.1, '(0, 0)'), (0.1, '(1, 0)')],
+        'R': [(0.8, '(1, 0)'), (0.1, '(0, 0)'), (0.1, '(0, 1)')],
+        'L': [(0.8, '(0, 0)'), (0.1, '(0, 1)'), (0.1, '(0, 0)')]
+		
+No other changes are required. The program will run for any MDP.
